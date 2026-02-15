@@ -34,6 +34,8 @@ cogniq/
 └── scripts/               # Deployment automation
 ```
 
+> ✅ Initial scaffolding for `docs/`, `src/`, `data/`, and `scripts/` is now in place.
+
 ---
 
 ## ⚙️ Installation
@@ -85,6 +87,16 @@ All test items are designed to minimize cultural and language bias, focusing on 
 - [ ] Develop backend API  
 - [ ] Add unit and integration tests  
 - [ ] Deploy to cloud hosting  
+
+## 🧱 Current Build Status
+
+- [x] High-level project plan (`PROJECT_PLAN.md`)
+- [x] Initial documentation scaffolding (`docs/*`)
+- [x] Initial code/data/script directory scaffolding
+- [ ] Finalize technology stack decision for MVP
+- [ ] Start backend + frontend implementation
+
+See `docs/stack-options.md` for stack directions and decision inputs needed from maintainers.
 
 ---
 
