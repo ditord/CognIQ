@@ -1,0 +1,110 @@
+[
+  {
+    "id": "fr-001",
+    "domain": "fluid_reasoning",
+    "difficulty": "easy",
+    "prompt": "2, 4, 8, 16, ?",
+    "options": [{ "id": "A", "label": "20" }, { "id": "B", "label": "24" }, { "id": "C", "label": "32" }, { "id": "D", "label": "30" }],
+    "correctOptionId": "C",
+    "timeLimitSeconds": 45
+  },
+  {
+    "id": "fr-002",
+    "domain": "fluid_reasoning",
+    "difficulty": "easy",
+    "prompt": "3, 6, 12, 24, ?",
+    "options": [{ "id": "A", "label": "36" }, { "id": "B", "label": "48" }, { "id": "C", "label": "42" }, { "id": "D", "label": "30" }],
+    "correctOptionId": "B",
+    "timeLimitSeconds": 45
+  },
+  {
+    "id": "fr-003",
+    "domain": "fluid_reasoning",
+    "difficulty": "medium",
+    "prompt": "5, 9, 17, 33, ?",
+    "options": [{ "id": "A", "label": "41" }, { "id": "B", "label": "49" }, { "id": "C", "label": "65" }, { "id": "D", "label": "57" }],
+    "correctOptionId": "C",
+    "timeLimitSeconds": 60
+  },
+  {
+    "id": "fr-004",
+    "domain": "fluid_reasoning",
+    "difficulty": "hard",
+    "prompt": "1, 1, 2, 3, 5, 8, ?",
+    "options": [{ "id": "A", "label": "11" }, { "id": "B", "label": "12" }, { "id": "C", "label": "13" }, { "id": "D", "label": "15" }],
+    "correctOptionId": "C",
+    "timeLimitSeconds": 75
+  },
+  {
+    "id": "wm-001",
+    "domain": "working_memory",
+    "difficulty": "easy",
+    "prompt": "Remember 7-2-9. Reverse order?",
+    "options": [{ "id": "A", "label": "9-2-7" }, { "id": "B", "label": "7-9-2" }, { "id": "C", "label": "2-9-7" }],
+    "correctOptionId": "A",
+    "timeLimitSeconds": 30
+  },
+  {
+    "id": "wm-002",
+    "domain": "working_memory",
+    "difficulty": "easy",
+    "prompt": "Remember 1-4-3-8. Reverse order?",
+    "options": [{ "id": "A", "label": "8-3-4-1" }, { "id": "B", "label": "8-4-3-1" }, { "id": "C", "label": "1-3-4-8" }],
+    "correctOptionId": "A",
+    "timeLimitSeconds": 30
+  },
+  {
+    "id": "wm-003",
+    "domain": "working_memory",
+    "difficulty": "medium",
+    "prompt": "Remember 4-1-9-2. Next value after sorting ascending?",
+    "options": [{ "id": "A", "label": "1" }, { "id": "B", "label": "2" }, { "id": "C", "label": "4" }, { "id": "D", "label": "9" }],
+    "correctOptionId": "A",
+    "timeLimitSeconds": 50
+  },
+  {
+    "id": "wm-004",
+    "domain": "working_memory",
+    "difficulty": "hard",
+    "prompt": "Remember 6-3-7-1-9. Third number in reverse order?",
+    "options": [{ "id": "A", "label": "1" }, { "id": "B", "label": "7" }, { "id": "C", "label": "3" }, { "id": "D", "label": "6" }],
+    "correctOptionId": "C",
+    "timeLimitSeconds": 65
+  },
+  {
+    "id": "pr-001",
+    "domain": "pattern_recognition",
+    "difficulty": "easy",
+    "prompt": "AB, BC, CD, ?",
+    "options": [{ "id": "A", "label": "DE" }, { "id": "B", "label": "DA" }, { "id": "C", "label": "CE" }, { "id": "D", "label": "EF" }],
+    "correctOptionId": "A",
+    "timeLimitSeconds": 45
+  },
+  {
+    "id": "pr-002",
+    "domain": "pattern_recognition",
+    "difficulty": "medium",
+    "prompt": "1, 4, 9, 16, ?",
+    "options": [{ "id": "A", "label": "20" }, { "id": "B", "label": "24" }, { "id": "C", "label": "25" }, { "id": "D", "label": "36" }],
+    "correctOptionId": "C",
+    "timeLimitSeconds": 55
+  },
+  {
+    "id": "pr-003",
+    "domain": "pattern_recognition",
+    "difficulty": "medium",
+    "prompt": "Z, X, V, T, ?",
+    "options": [{ "id": "A", "label": "S" }, { "id": "B", "label": "R" }, { "id": "C", "label": "Q" }, { "id": "D", "label": "P" }],
+    "correctOptionId": "B",
+    "timeLimitSeconds": 55
+  },
+  {
+    "id": "pr-004",
+    "domain": "pattern_recognition",
+    "difficulty": "hard",
+    "prompt": "3, 7, 15, 31, ?",
+    "options": [{ "id": "A", "label": "47" }, { "id": "B", "label": "57" }, { "id": "C", "label": "63" }, { "id": "D", "label": "60" }],
+    "correctOptionId": "C",
+    "timeLimitSeconds": 75
+  }
+]

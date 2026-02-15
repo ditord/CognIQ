@@ -34,9 +34,11 @@ cogniq/
 └── scripts/               # Deployment automation
 ```
 
+> ✅ Initial scaffolding plus MVP prototype implementation is now in place.
+
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation and Running
 
 1. Clone the repository:
    ```bash
@@ -49,9 +51,14 @@ cogniq/
    npm install
    ```
 
-3. Run the development server:
+3. Run backend API (Fastify + TypeScript):
    ```bash
-   npm start
+   npm run dev:api
+   ```
+
+4. Run frontend app (React + Vite + TypeScript):
+   ```bash
+   npm run dev:web
    ```
 
 ---
@@ -79,18 +86,36 @@ All test items are designed to minimize cultural and language bias, focusing on 
 
 ## 🚀 Roadmap
 
-- [ ] Define validated question sets  
-- [ ] Implement scoring algorithms  
-- [ ] Build frontend interface  
-- [ ] Develop backend API  
-- [ ] Add unit and integration tests  
-- [ ] Deploy to cloud hosting  
+- [x] Define prototype question set and item schema
+- [x] Implement baseline scoring and session flow
+- [x] Build minimal frontend interface
+- [x] Develop backend API
+- [x] Add initial API tests
+- [ ] Deploy to cloud hosting
+
+## 🧱 Current Build Status
+
+- [x] Option A selected (TypeScript full-stack)
+- [x] Fastify backend MVP routes implemented
+- [x] React + Vite frontend MVP implemented
+- [x] Item schema + 12-item prototype bank available
+- [x] API tests running with Vitest
+
+See `docs/stack-options.md` for the recorded decision and next stack tasks.
 
 ---
 
+
+## API Endpoints (Fastify MVP)
+
+- `POST /api/sessions` → create a test session
+- `GET /api/sessions/:sessionId/items/next` → fetch next unanswered item
+- `POST /api/sessions/:sessionId/answers` → submit selected option
+- `GET /api/sessions/:sessionId/score` → retrieve current score summary
+
 ## 📜 License
 
-This project is licensed under the MIT License – see the `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]` file for details.
+This project is licensed under the MIT License – see the `LICENSE` file for details.
 
 ---
 
@@ -105,5 +130,3 @@ Contributions are welcome! Please read `docs/methodology.md` before submitting p
 - Alternative: **iq-test-web** (more descriptive, less brandable)
 
 ---
-
-Would you like me to also draft the **methodology.md** file next, with a structured explanation of the psychometric principles and test design philosophy? That way, your repo will look academically solid right from the start.

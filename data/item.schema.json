@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cogniq.local/schemas/item.schema.json",
+  "title": "CognIQ Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "domain",
+    "difficulty",
+    "prompt",
+    "options",
+    "correctOptionId",
+    "timeLimitSeconds"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["fluid_reasoning", "working_memory", "pattern_recognition"]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"]
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 8
+    },
+    "options": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Z]$" },
+          "label": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "correctOptionId": {
+      "type": "string",
+      "pattern": "^[A-Z]$"
+    },
+    "timeLimitSeconds": {
+      "type": "integer",
+      "minimum": 20,
+      "maximum": 120
+    }
+  }
+}
